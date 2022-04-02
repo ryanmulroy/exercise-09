@@ -3,14 +3,45 @@
 body {
   font-family: "Helvetica", "Arial", sans-serif;
   line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4;
+  grid-gap: 20px;
+  grid-template-areas:
+    "header header  header"
+    "nav    welcome welcome"
+    "nav    cats    coming-soon"
+    "footer footer  footer";
+
 }
 
-header,
-nav,
+header {
+  background-color: #eee;
+  grid-area: header;
+}
+
+nav {
+  background-color: #eee;
+  grid-area: nav;
+}
+
 footer {
   background-color: #eee;
+  grid-area: footer;
 }
 
 section {
   background-color: #ddd;
+}
+
+#welcome {
+  grid-area: welcome;
+}
+
+#coming-soon {
+  grid-area: coming-soon;
+}
+
+#cats {
+  grid-area: cats;
 }

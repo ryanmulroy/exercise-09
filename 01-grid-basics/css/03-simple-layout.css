@@ -19,3 +19,38 @@ section {
 /* DO NOT TOUCH ANY STYLES ABOVE THIS LINE! */
 /* WRITE YOUR STYLES BELOW! 👇👇👇           */
 /* **************************************** */
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  /* not sure how to center everything within body */
+  grid-template-areas:
+    "masthead   masthead"
+    "navigation welcome"
+    "copyright  copyright";
+}
+
+header {
+  grid-area: masthead;
+}
+
+nav {
+  grid-area: navigation;
+  box-sizing: content-box;
+  height: 187px;
+}
+
+main {
+  grid-area: welcome;
+}
+
+section {
+  box-sizing: content-box;
+  height: 187px;
+}
+
+
+footer {
+  grid-area: copyright;
+}

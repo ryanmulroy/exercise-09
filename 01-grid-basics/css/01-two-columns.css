@@ -1,4 +1,11 @@
-/* 01-two-columns.css */
+main {
+  display: flex;
+  width: 960px;
+  padding: 20px;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
 
 body {
   font-family: sans-serif;
